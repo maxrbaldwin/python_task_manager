@@ -16,10 +16,9 @@ async function auth_user(path, payload) {
   }
 }
 
-async function handle_create_task(task) {
-  const endpoint = `http://127.0.0.1:8080/handle_create_task`
+async function handle_task(task) {
+  const endpoint = `http://127.0.0.1:8080/handle_task`
   try {
-    console.log('try')
     const res = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

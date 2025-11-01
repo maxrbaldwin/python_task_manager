@@ -18,7 +18,8 @@ class DB_CSV_Paths(Enum):
   users = './db/users.csv'
   tasks = './db/tasks.csv'
 
-class CreateTask(BaseModel):
+class Task(BaseModel):
   id: str
   task_title: str
   task_description: str
+  task_status: str

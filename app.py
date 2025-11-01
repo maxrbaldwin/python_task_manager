@@ -1,5 +1,5 @@
 from nicegui import ui, app
-from typs.index import UserAuth, CreateTask
+from typs.index import UserAuth, Task
 
 #api routes
 from api.server_auth import server_auth
@@ -19,8 +19,9 @@ app.add_static_files('/static', 'static')
 def handle_server_auth(user_auth: UserAuth):
   return server_auth(user_auth)
 
-@app.post('/handle_create_task')
-def handle_create_task(task: CreateTask):
+@app.post('/handle_task')
+def handle_task(task: Task):
+  print(task)
   return make_task(task)
 
 # ui pages
