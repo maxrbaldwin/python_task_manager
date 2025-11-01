@@ -1,11 +1,36 @@
-function post_json(path, payload) {
-  console.log(path, payload)
+async function auth_user(path, payload) {
   const endpoint = `http://127.0.0.1:8080/${path}`
-  fetch(endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  })
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    const user = await res.json();
+
+    if (user.id) {
+      window.location.replace('/profile')
+    }
+  } catch (err) {
+    alert("Error logging in. Refresh and try again")
+  }
 }
 
-console.log('cheese')
+async function handle_create_task(task) {
+  const endpoint = `http://127.0.0.1:8080/handle_create_task`
+  try {
+    console.log('try')
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(task)
+    })
+    const user = await res.json();
+
+    if (user.id) {
+      window.location.replace('/profile')
+    }
+  } catch (err) {
+    alert("Error logging in. Refresh and try again")
+  }
+}

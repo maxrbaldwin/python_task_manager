@@ -1,0 +1,1 @@
+if you mess with the javascript file you need to restart the  server. The nice gui server doesn't watch js files. Only python files
