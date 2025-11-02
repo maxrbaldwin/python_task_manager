@@ -8,6 +8,10 @@ async function auth_user(path, payload) {
     })
     const user = await res.json();
 
+    if (!user) {
+      alert("Your password is incorrect. Please try again")
+    }
+
     if (user.id) {
       window.location.replace('/profile')
     }

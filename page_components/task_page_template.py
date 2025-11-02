@@ -10,7 +10,7 @@ def task_page_template(task: dict, label: str):
   id = task.get('id', str(uuid4()))
   title_placeholder = task.get('task_title')
   description_placeholder = task.get('task_description')
-  status_placeholder = 'Finished' if task.get('is_finished') else "Not Finished"
+  status_placeholder = 'Finished' if task.get('is_finished') != "False" else "Not Finished"
   with ui.column().classes('flex flex-column'):
     task_title = ui.input(label="Task Title", value=title_placeholder)
     task_description = ui.textarea(label="Task Description", value=description_placeholder)

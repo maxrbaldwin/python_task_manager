@@ -1,5 +1,6 @@
 import pandas as pd
 from typs.index import ID, User, DB_CSV_Paths, UserAuth
+from util.passwords import hash_password
 
 def get_user_by_id(user_id: ID):
   df = pd.read_csv(DB_CSV_Paths.users.value)
@@ -42,7 +43,8 @@ def update_user(user_id: ID, user_data: User):
   return user_data
 
 def make_user(user_id: ID, user_auth: UserAuth):
-  user = User(id=user_id, username=user_auth.username, password=user_auth.password)
+  hashed_password = hash_password(user_auth.password)
+  user = User(id=user_id, username=user_auth.username, password=hashed_password)
   return user
 
 def to_csv(df, csv_path: DB_CSV_Paths):

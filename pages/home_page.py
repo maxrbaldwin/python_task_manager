@@ -10,7 +10,7 @@ def home_page():
     with ui.column().classes('flex flex-column'):
       ui.label("Login or Create Account").classes('text-lg')
       username_input = ui.input(label="Username")
-      password_input = ui.input(label="Password")
+      password_input = ui.input(label="Password", password=True)
       ui.button(text="Login", on_click=lambda: handle_client_auth(username_input, password_input))
 
 def handle_client_auth(username_input: Input, password_input: Input):
