@@ -1,6 +1,6 @@
 from uuid import uuid4
 from nicegui import app
-from db.index import get_user_by_username, insert_user, make_user
+from db.users import get_user_by_username, insert_user, make_user
 from typs.index import UserAuth
 from util.passwords import verify_password
 
