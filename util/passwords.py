@@ -1,7 +1,7 @@
 import bcrypt
 
 def hash_password(password: str):
-  password_as_bytes = password_as_bytes(password)
+  password_as_bytes = password_string_to_bytes(password)
   salt = bcrypt.gensalt()
   hashed = bcrypt.hashpw(password_as_bytes, salt)
   return hashed

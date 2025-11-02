@@ -19,7 +19,6 @@ def get_user_by_username(username: str):
       return None
   # csv was empty
   except pd.errors.EmptyDataError:
-    print('empty')
     return None
   # not found in csv
   except KeyError as key_error:
@@ -48,4 +47,4 @@ def make_user(user_id: ID, user_auth: UserAuth):
   return user
 
 def to_csv(df, csv_path: DB_CSV_Paths):
-  df.to_csv(csv_path, mode='a', header=True, index=True)
+  df.to_csv(csv_path, mode='a', header=True, index=False)

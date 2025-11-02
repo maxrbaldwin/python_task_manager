@@ -1,10 +1,8 @@
-Unnamed: 0,id,task_title,task_description,user_id,is_finished
-0.0,6ff1c0e8-0f8f-4740-a221-32dbb078e802,qwerqwerqwerqwer,asdfasdfasdf,e541e469-c7a5-4674-a635-a40fa18904dd,False
-,id,task_title,task_description,user_id,
-0.0,58129ac5-4dfa-45df-9cb6-7b5deb471aa0,erqwerqwer,hgdfghdfghdfgsdfgsdfg,e541e469-c7a5-4674-a635-a40fa18904dd,True
-,id,task_title,task_description,user_id,is_finished 
-0,97082e3d-07a2-48cc-9a44-7eaaf4b87f0b,New task please,Holy smokes,e541e469-c7a5-4674-a635-a40fa18904dd,False
-,id,task_title,task_description,user_id,is_finished 
-0,b6d28a27-f70a-4fbc-bc81-0a8b2393973a,Here is a new task,Do my home work,0ebf1d8b-959e-42b3-a284-8c49740f8fd3,False
-,id,task_title,task_description,user_id,is_finished 
-0,c07b7912-3892-40c9-b55b-fbf095d14656,add some style to this,We need to make this look better,0ebf1d8b-959e-42b3-a284-8c49740f8fd3,False
+id,task_title,task_description,user_id,is_finished
+f9cb3617-f73b-4666-b8bf-9d74e5615fa9,qwerqwerqwer,qwerqwerqwer,2fd77707-d9b5-4305-828e-b60362926464,Finished
+id,task_title,task_description,user_id,is_finished
+25483bd4-8f30-42e3-b123-7a4592ab4d88,qwerqwerqwerqwer,qwerqwerqwerqwer,2fd77707-d9b5-4305-828e-b60362926464,Not Finished
+id,task_title,task_description,user_id,is_finished
+78505e7c-972b-4c63-9528-b2761345c6f0,weqrqwerqwerqwer,qwerqwerqwerqwer,9e44a90d-7978-4dbb-b4ba-4158e4fbb130,Not Finished
+id,task_title,task_description,user_id,is_finished
+1967ccb3-3a95-4bdb-9c4c-4477ef2d3fc9,wertwretwertwert,wertwertwertwert,9e44a90d-7978-4dbb-b4ba-4158e4fbb130,Finished

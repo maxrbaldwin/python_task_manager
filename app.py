@@ -21,7 +21,6 @@ def handle_server_auth(user_auth: UserAuth):
 
 @app.post('/handle_task')
 def handle_task(task: Task):
-  print(task)
   return make_task(task)
 
 # ui pages

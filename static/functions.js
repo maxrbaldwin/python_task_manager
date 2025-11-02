@@ -31,7 +31,7 @@ async function handle_task(task) {
     const user = await res.json();
 
     if (user.id) {
-      window.location.replace('/profile')
+      window.location.href = ('/profile')
     }
   } catch (err) {
     alert("Error logging in. Refresh and try again")
