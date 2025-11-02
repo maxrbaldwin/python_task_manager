@@ -13,21 +13,31 @@ def profile_page():
   with center_container():
     with parent_styled_container():
       with ui.column().classes('flex flex-column'):
-        header('YourTasks')
         ui.link(text="Create Task", target="/create_task")
+        
+        header('Your Tasks')
       
       with ui.column().classes('flex flex-column min-w-sm'):
         user_id = user['id']
         user_tasks = get_task_by_user_id(user_id)
         user_tasks_copy = user_tasks
+
+        if user_tasks.empty:
+          return
+        
         for task in user_tasks.to_dict(orient="records"):
           title = task['task_title']
           id = task['id']
           ui.link(text=title, target=f"/task/{id}")
         
-        header('Finished tasks')
         finished_condition = user_tasks_copy['is_finished'] == 'Finished'
-        for finished_task in user_tasks_copy[finished_condition].to_dict(orient="records"):
+        finished_tasks = user_tasks_copy[finished_condition]
+
+        if finished_tasks.empty:
+          return
+        
+        header('Finished tasks')
+        for finished_task in finished_tasks.to_dict(orient="records"):
           title = finished_task['task_title']
           id = finished_task['id']
           ui.link(text=title, target=f"/task/{id}")

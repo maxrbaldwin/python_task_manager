@@ -34,14 +34,14 @@ def get_task_by_user_id(user_id):
     if not user_tasks.empty:
       return user_tasks
     else:
-      return []
+      return pd.DataFrame()
   # csv was empty
   except pd.errors.EmptyDataError:
-    return []
+    return pd.DataFrame()
   # not found in csv
   except KeyError as key_error:
     print(key_error)
-    return []
+    return pd.DataFrame()
 
 def get_task_by_id(task_id: str):
   try:
@@ -50,13 +50,13 @@ def get_task_by_id(task_id: str):
     condition = task_data['id'] == task_id
     user_tasks = task_data[condition]
     if user_tasks.empty:
-      return []
+      return pd.DataFrame()
     else:
-      return user_tasks.to_dict(orient="records")
+      return user_tasks
    # csv was empty
   except pd.errors.EmptyDataError:
-    return []
+    return pd.DataFrame()
   # not found in csv
   except KeyError as key_error:
     print(key_error)
-    return []
+    return pd.DataFrame()
