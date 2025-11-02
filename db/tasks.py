@@ -32,7 +32,7 @@ def get_task_by_user_id(user_id):
     condition = task_data['user_id'] == str(user_id)
     user_tasks = task_data[condition]
     if not user_tasks.empty:
-      return user_tasks.to_dict(orient="records")
+      return user_tasks
     else:
       return []
   # csv was empty

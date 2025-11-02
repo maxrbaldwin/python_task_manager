@@ -6,3 +6,5 @@ id,task_title,task_description,user_id,is_finished
 78505e7c-972b-4c63-9528-b2761345c6f0,weqrqwerqwerqwer,qwerqwerqwerqwer,9e44a90d-7978-4dbb-b4ba-4158e4fbb130,Not Finished
 id,task_title,task_description,user_id,is_finished
 1967ccb3-3a95-4bdb-9c4c-4477ef2d3fc9,wertwretwertwert,wertwertwertwert,9e44a90d-7978-4dbb-b4ba-4158e4fbb130,Finished
+id,task_title,task_description,user_id,is_finished
+fced2528-55cf-4122-bedd-7838ebbdf41d,Do my homework,I need to get this done,2fd77707-d9b5-4305-828e-b60362926464,Finished
