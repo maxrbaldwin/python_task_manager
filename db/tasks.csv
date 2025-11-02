@@ -1,8 +1,8 @@
 id,task_title,task_description,user_id,is_finished
-02fba465-d381-4a91-8a24-6e11e9cf8271,new task,task task,9cb658bd-0f21-44a5-8461-e92d3884bbbe,Finished
+4d8e21f4-887e-4806-8e87-ada6578d5bf9,Finish my homework,I need to finish my homework so I can graduate from fullstack academy ,a3dba941-a312-4700-a08b-f688a3716578,Finished
 id,task_title,task_description,user_id,is_finished
-a4dbd053-4ef8-443a-8afe-9b081e591fa4,qwerqswerqwer,qwerqwerqwerqwer,9cb658bd-0f21-44a5-8461-e92d3884bbbe,Not Finished
+c89ff987-c409-4f43-a0c1-ac0d3b4699b9,Cook Dinner,I should probably cook some dinner tonight,a3dba941-a312-4700-a08b-f688a3716578,Finished
 id,task_title,task_description,user_id,is_finished
-8442a1a5-c089-48dd-a734-d9819c9f688c,rqwerqwe,qwerqwerqwerqwer,047570bf-074c-4d76-ae8f-76b6e3290356,Not Finished
+e206fed0-95de-4e20-b84e-5cca70b134ab,Plan for work tomorrow,I have a bunch of stuff to do tomorrow at work tomorrow. I should make a plan,39f59bd5-f9aa-473c-84ef-ec49128a2574,Not Finished
 id,task_title,task_description,user_id,is_finished
-953ae268-76e5-4f28-a4ae-44b40726da6a,asdfasd,asdfasdf,047570bf-074c-4d76-ae8f-76b6e3290356,Finished
+60b722d7-7083-4d28-86a6-01e88da96174,Learn Python,That will be easy because I did this whole project,39f59bd5-f9aa-473c-84ef-ec49128a2574,Finished
