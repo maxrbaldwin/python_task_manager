@@ -3,3 +3,6 @@ start:
 
 requirements:
 	./.venv/bin/pip freeze > requirements.txt
+
+environment:
+	python3 -m venv ./.venv
